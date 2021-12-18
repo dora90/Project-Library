@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <legend id="title1" style="font-size: 25px; font-weight: bold; margin-bottom: 30px; text-align:center;">Book Library</legend>
+            <div class="form-body">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title"/>
+            </div>
+            <div class="form-body">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" placeholder="Author" autocomplete="on"/>
+            </div>
+            <div class="form-body">
+                <label for="number of pages">Number of Pages</label>
+                <input type="text" name="number of pages" id="pages" placeholder="Number of pages"/>
+            </div>     
+            <button type="submit" id="submit">Add Book</button>
+        </form>
+</div>  
+<div class="main-content">
+    <h3>My Book List</h3>
+            <table class="table">
+                <thead>
+                <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Number Of Pages</th>
+                <th>Delete Book</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+            </table>
+</div>
+   <script src="./script.js"></script> 
+</body>
+</html>
